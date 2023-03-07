@@ -1,4 +1,6 @@
 dependencies {
+    implementation project(":currency")
+
     compileOnly commonLibs.lombok
     annotationProcessor commonLibs.lombok
 

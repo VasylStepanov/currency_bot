@@ -2,3 +2,5 @@
 /.gradle
 /build
 /bot/src/main/resources/application.properties
+/bot/build
+/currency/build

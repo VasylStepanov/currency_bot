@@ -6,5 +6,5 @@ import org.json.JSONArray;
 import java.util.List;
 
 public interface JsonParser {
-    List<Currency> parse(JSONArray array);
+    List<Currency> parse(String jsonData);
 }

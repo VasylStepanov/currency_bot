@@ -9,6 +9,12 @@ subprojects {
     apply plugin: 'java'
 }
 
+project("bot"){
+}
+
+project("currency"){
+}
+
 allprojects {
     task('built').doLast {
         printf "$project.name is built\n"
@@ -18,11 +24,6 @@ allprojects {
 
     java.sourceCompatibility(JavaVersion.VERSION_17)
     java.targetCompatibility(JavaVersion.VERSION_17)
-
-    dependencies {
-        implementation project(":bot")
-        implementation project(":currency")
-    }
 
     repositories {
         mavenCentral()
