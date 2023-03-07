@@ -1,0 +1,13 @@
+ext.commonLibs = [
+        'lombok' : 'org.projectlombok:lombok:1.18.24'
+]
+ext.botLibs = [
+        'telegram' : 'org.telegram:telegrambots:6.5.0'
+]
+ext.currencyLibs = [
+        'json' : 'org.json:json:20220924'
+]
+ext.testLibs = [
+        'jupiterAPI' : 'org.junit.jupiter:junit-jupiter-api:5.8.1',
+        'jupiterEngine' : 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+]

@@ -1,0 +1,4 @@
+/.idea
+/.gradle
+/build
+/bot/src/main/resources/application.properties

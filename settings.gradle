@@ -1,0 +1,4 @@
+rootProject.name = 'currency_bot'
+include 'bot'
+include 'currency'
+

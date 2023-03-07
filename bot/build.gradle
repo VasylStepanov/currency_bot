@@ -1,0 +1,10 @@
+dependencies {
+    compileOnly commonLibs.lombok
+    annotationProcessor commonLibs.lombok
+
+    implementation botLibs.telegram
+
+    testImplementation testLibs.jupiterAPI
+    testImplementation testLibs.jupiterEngine
+}
+

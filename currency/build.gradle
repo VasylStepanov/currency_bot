@@ -1,0 +1,9 @@
+dependencies {
+    compileOnly commonLibs.lombok
+    annotationProcessor commonLibs.lombok
+
+    implementation currencyLibs.json
+
+    testImplementation testLibs.jupiterAPI
+    testImplementation testLibs.jupiterEngine
+}
