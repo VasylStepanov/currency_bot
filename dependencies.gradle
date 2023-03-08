@@ -1,8 +1,9 @@
 ext.commonLibs = [
-        'lombok' : 'org.projectlombok:lombok:1.18.24'
+        'lombok' : 'org.projectlombok:lombok:1.18.24',
 ]
 ext.botLibs = [
-        'telegram' : 'org.telegram:telegrambots:6.5.0'
+        'telegram' : 'org.telegram:telegrambots:6.5.0',
+        'commons_logging' : 'commons-logging:commons-logging:1.2',
 ]
 ext.currencyLibs = [
         'json' : 'org.json:json:20220924'

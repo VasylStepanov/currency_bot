@@ -4,6 +4,7 @@ dependencies {
     compileOnly commonLibs.lombok
     annotationProcessor commonLibs.lombok
 
+    implementation botLibs.commons_logging;
     implementation botLibs.telegram
 
     testImplementation testLibs.jupiterAPI

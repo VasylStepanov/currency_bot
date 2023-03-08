@@ -2,7 +2,6 @@ package org.currency.parse_json;
 
 import org.currency.dto.Currency;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.LinkedList;
@@ -26,6 +25,9 @@ public class PrivatJsonParser implements JsonParser {
         for(Object obj : array){
             JSONObject object = new JSONObject(obj.toString());
 
+            if(!object.has("purchaseRate"))
+                continue;
+
             String currency = object.getString("currency");
             if(!getCurrencyCodes().containsValue(currency))
                 continue;
@@ -33,8 +35,8 @@ public class PrivatJsonParser implements JsonParser {
             currencies.add(new Currency(
                     object.getString("baseCurrency"),
                     currency,
-                    object.getDouble("purchaseRateNB"),
-                    object.getDouble("saleRateNB")
+                    object.getDouble("purchaseRate"),
+                    object.getDouble("saleRate")
             ));
         }
         return currencies;
